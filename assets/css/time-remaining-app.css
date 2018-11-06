@@ -1,0 +1,124 @@
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #505050;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  float: none;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* grid system */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+}
+
+/* This will be available to all col- class */
+[class*="col-"] {
+  flex: 0 0 92%;
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* CUSTOM */
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: darkgreen;
+}
+
+.blue {
+  background-color: aquamarine;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.brand {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex: 0 1 100%; */
+  justify-content: center;
+  align-items: center;
+}
+
+.display-date-time {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex: 0 1 100%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-date-time > h1, h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-top: 5px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+  .col-2 {
+    flex: 0 0 92%;
+  }
+
+
+
+}
+
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    flex: 0 0 20%;
+  }
+  
+  .col-2 {
+    flex: 0 0 44%;
+  }
+  .col-3 {
+    flex: 0 0 68%;
+  }
+  .col-4 {
+    flex: 0 0 92%;
+  }  
+}

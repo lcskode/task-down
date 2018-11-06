@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Time Remaining App</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/time-remaining-app.css">
+
+  <script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    
+    <header class="row pink">
+      <div class="col-2 brand blue">
+        <h1>TIME REMAINING APP</h1>
+      </div>
+      <div class="col-2 display-date-time blue">
+        <h1 id="display-time">TIME HERE</h1>
+        <h2 id="display-date">DATE HERE</h2>
+      </div>
+    </header>
+    
+    <section class="row orange">
+      <div class="col-4">
+        <form action="" class="form-add-task">
+          <fieldset>
+            <legend>Add Task</legend>
+            <p>Task Name: <input type="text" name="task-name" class="task-name"></p>
+            <p>Start Date: <input type="date" name="start-date" class="start-date"></p>
+            <p>End Date: <input type="date" name="end-date" class="end-date"></p>
+            <p><button>Add Task</button></p>
+          </fieldset>
+        </form>  
+
+        <p class="display-task-name"></p>
+        <p class="display-start-date"></p>
+        <p class="display-end-date"></p>
+
+      </div>  
+    </section>
+
+    <section class="row">
+      
+    </section>
+
+    <section class="row blue">
+      <ul class="add-task">
+        <li><button>X</button> Countdown for NEW YEAR: <span class="task-countdown">HERE</span></li>
+        <li><button>X</button> Countdown for Thanksgiving: [Remaining Time]</li>
+        <li><button>X</button> Task 3: [Remaining Time]</li>
+      </ul>
+    </section>
+
+    <footer class="row orange">   
+      <p>Footer</p>
+    </footer>
+    
+  </div> <!-- end-container -->
+
+  <script src="./assets/js/time-remaining-app.js"></script>
+</body>
+</html>
